@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="mx.RosasSoto.proyectofinalvideo.MainActivity" >
+	
+
+<mx.RosasSoto.proyectofinalvideo.CustomVideoView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+     android:id="@+id/video" />
+
+	<LinearLayout
+	    android:id="@+id/confLay"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<Button
+		    android:id="@+id/confBtn"
+		    android:layout_weight=".5"
+ 				android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:onClick="abrirConfiguracion"
+		    android:text="Configuracion"
+		    android:weightSum="1.0" />
+
+		<Button
+		    android:id="@+id/SalirBtn"
+		    android:layout_weight=".5"
+  			android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:onClick="Salir"
+		    android:text="Salir"
+		    android:weightSum="1.0" />
+
+	</LinearLayout>
+
+</FrameLayout>
+

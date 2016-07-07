@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.RosasSoto.proyectofinalvideo.Login" >
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow >
+        
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left|center_vertical"
+	            android:text="Id Dispositivo:" />
+               
+            <EditText
+                android:id="@+id/dispositivoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:ems="9"
+                android:inputType="phone" >
+
+            	<requestFocus />
+        	</EditText>
+        
+        </TableRow>
+
+		
+		<TableRow >
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|center_horizontal"
+	            android:text="Contraseña:" />
+
+	        <EditText
+	            android:id="@+id/contraTxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/activity_horizontal_margin"
+	            android:ems="9"
+	            android:inputType="textPassword" />
+
+        </TableRow>
+        
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/entrarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left|center_vertical|center_horizontal|center"
+            android:gravity="left|center_vertical"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/registrarseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:text="Registrarse"
+            android:onClick="registrarse" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/salirBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:onClick="salir"
+        android:text="Salir" />
+
+</LinearLayout>
